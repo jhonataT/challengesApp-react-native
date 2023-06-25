@@ -1,7 +1,6 @@
 import { View } from "react-native";
 import { Card } from "../../components/Card";
 import { styles } from "./styles";
-import { useEffect } from "react";
 
 export const HomeScreen = ({ navigation }) => {
     return <View style={[styles.homeContainer]}>
