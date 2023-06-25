@@ -7,11 +7,22 @@ export const styles = StyleSheet.create({
         paddingTop: statusBarHeight,
         paddingBottom: 12,
         borderBottomWidth: 1,
-        borderBottomColor: '#fff'
+        borderBottomColor: '#fff',
+
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between'
+        
     },
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        color: '#fff'
+    },
+    iconContainer: {
+
+    },
+    icon: {
         color: '#fff'
     }
 });

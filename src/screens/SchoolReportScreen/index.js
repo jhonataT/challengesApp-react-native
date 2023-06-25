@@ -42,7 +42,7 @@ const FormGroup = ({ data, handleChangeReport, handleSaveNewMean }) => {
     </View>
 };
 
-export const SchoolReportScreen = () => {
+export const SchoolReportScreen = ({ navigation }) => {
     const [schoolReportValues, setSchoolReportValues] = useState({
         mathMean: 0,
         phMean: 0,
@@ -120,7 +120,7 @@ export const SchoolReportScreen = () => {
     }
 
     return <View style={styles.container}>
-        <Header title='Boletim escolar'/>
+        <Header title='Boletim escolar' navigation={navigation}/>
         <View style={styles.cardsGroup}>
             <CardInfo
                 title='Matemática'

@@ -17,7 +17,7 @@ export const HomeScreen = ({ navigation }) => {
         <Card
             name='Gerador de frases Aleatórias'
             iconName='ios-text-outline'
-            handleClick={() => navigation.navigate('PhrasesGenerator')}
+            handleClick={() => navigation.navigate('RandomPhrases')}
         />
     </View>
 }
