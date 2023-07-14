@@ -6,6 +6,7 @@ import { SchoolReportScreen } from './src/screens/SchoolReportScreen';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { WelcomeScreen } from './src/screens/WelcomeScreen';
 import { RandomPhrasesScreen } from './src/screens/RandomPhrasesScreen';
+import { FortuneCookieScreen } from './src/screens/FortuneCookieScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +37,11 @@ export default function App() {
           name='RandomPhrases'
           component={RandomPhrasesScreen}
           options={{ contentStyle:{backgroundColor: "#343635"} }}
+        />
+        <Stack.Screen
+          name='FortuneCookie'
+          component={FortuneCookieScreen}
+          options={{ contentStyle:{ backgroundColor: "#343635" } }}
         />
       </Stack.Navigator>
     </NavigationContainer>

@@ -19,5 +19,11 @@ export const HomeScreen = ({ navigation }) => {
             iconName='ios-text-outline'
             handleClick={() => navigation.navigate('RandomPhrases')}
         />
+        <Card
+            name='Biscoito da Sorte'
+            iconName='cookie-bite'
+            isAwesomeIcon
+            handleClick={() => navigation.navigate('FortuneCookie')}
+        />
     </View>
 }
