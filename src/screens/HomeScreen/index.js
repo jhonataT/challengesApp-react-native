@@ -25,5 +25,20 @@ export const HomeScreen = ({ navigation }) => {
             isAwesomeIcon
             handleClick={() => navigation.navigate('FortuneCookie')}
         />
+        <Card
+            name='Cronômetro'
+            iconName='ios-alarm'
+            handleClick={() => navigation.navigate('StopWatch')}
+        />
+        <Card
+            name='Uso do Modal'
+            iconName='ios-open-outline'
+            handleClick={() => navigation.navigate('Modal')}
+        />
+        <Card
+            name='Animações'
+            iconName='alert-circle-sharp'
+            handleClick={() => navigation.navigate('Animations')}
+        />
     </View>
 }

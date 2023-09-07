@@ -12,8 +12,6 @@ export const FortuneCookieScreen = ({ navigation }) => {
         setIsCookieOpen(true);
         const response = await axios.get('https://buddha-api.com/api/random');
 
-        console.log("RESPONSE", response.data);
-
         if(response.data && response.data.text) {
             setCurrentPhrase(response.data.text);
         }

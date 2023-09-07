@@ -7,6 +7,10 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { WelcomeScreen } from './src/screens/WelcomeScreen';
 import { RandomPhrasesScreen } from './src/screens/RandomPhrasesScreen';
 import { FortuneCookieScreen } from './src/screens/FortuneCookieScreen';
+import { StopWatchScreen } from './src/screens/StopWatchScreen';
+import { ModalScreen } from './src/screens/ModalScreen';
+import { AnimationScreen } from './src/screens/AnimationScreen';
+import { CEPScreen } from './src/screens/CEPScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +45,21 @@ export default function App() {
         <Stack.Screen
           name='FortuneCookie'
           component={FortuneCookieScreen}
+          options={{ contentStyle:{ backgroundColor: "#343635" } }}
+        />
+        <Stack.Screen
+          name='StopWatch'
+          component={StopWatchScreen}
+          options={{ contentStyle:{ backgroundColor: "#343635" } }}
+        />
+        <Stack.Screen
+          name='Modal'
+          component={ModalScreen}
+          options={{ contentStyle:{ backgroundColor: "#343635" } }}
+        />
+        <Stack.Screen
+          name='Animations'
+          component={AnimationScreen}
           options={{ contentStyle:{ backgroundColor: "#343635" } }}
         />
       </Stack.Navigator>
