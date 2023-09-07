@@ -19,5 +19,26 @@ export const HomeScreen = ({ navigation }) => {
             iconName='ios-text-outline'
             handleClick={() => navigation.navigate('RandomPhrases')}
         />
+        <Card
+            name='Biscoito da Sorte'
+            iconName='cookie-bite'
+            isAwesomeIcon
+            handleClick={() => navigation.navigate('FortuneCookie')}
+        />
+        <Card
+            name='Cronômetro'
+            iconName='ios-alarm'
+            handleClick={() => navigation.navigate('StopWatch')}
+        />
+        <Card
+            name='Uso do Modal'
+            iconName='ios-open-outline'
+            handleClick={() => navigation.navigate('Modal')}
+        />
+        <Card
+            name='Animações'
+            iconName='alert-circle-sharp'
+            handleClick={() => navigation.navigate('Animations')}
+        />
     </View>
 }
